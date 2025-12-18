@@ -19,6 +19,11 @@ class Libfsapfs < Formula
     ENV.append "LDFLAGS", "-L#{openssl.opt_lib}"
     ENV.prepend_path "PKG_CONFIG_PATH", "#{openssl.opt_lib}/pkgconfig"
 
+    # libfsapfs uses libyal "synclibs" to vendor its local dependencies.
+    # Homebrew builds are sandboxed by default; if this step fails due to
+    # blocked network access, retry with `HOMEBREW_NO_SANDBOX=1`.
+    system "./synclibs.sh"
+
     system "autoreconf", "-fi"
     system "./configure", *std_configure_args,
                           "--with-openssl=#{openssl.opt_prefix}",
