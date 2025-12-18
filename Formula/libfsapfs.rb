@@ -1,8 +1,8 @@
 class Libfsapfs < Formula
   desc "Library to access the Apple File System (APFS)"
   homepage "https://github.com/0xpablo/libfsapfs"
-  url "https://github.com/0xpablo/libfsapfs/archive/192ede6f30b2a413d01731a4bdab52d0f94ac9a5.tar.gz"
-  sha256 "05c4a9a24b9e99e088e112a9466bfa43b1fc0c1ee0d63d827900b6dc228a1aa6"
+  url "https://github.com/0xpablo/libfsapfs/archive/cfdf54be3737ed6c42802f8ed62cdfd7ed2cecb6.tar.gz"
+  sha256 "e2ea36e0c277dd760962a3fcd939d8f6a5ce3623c8a7472c691846fe0f6242b4"
   license "LGPL-3.0-or-later"
 
   depends_on "autoconf" => :build
