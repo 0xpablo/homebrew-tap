@@ -2,6 +2,7 @@ class Libfsapfs < Formula
   desc "Library to access the Apple File System (APFS)"
   homepage "https://github.com/0xpablo/libfsapfs"
   url "https://github.com/0xpablo/libfsapfs/archive/b31a665d8f47343b6de91408a0f7a606d94ceeba.tar.gz"
+  version "b31a665d8f47343b6de91408a0f7a606d94ceeba"
   sha256 "0cc763d98fa98b5dcadd4146cd41d9b87e2f050b93fca7b478bae1476809ecde"
   license "LGPL-3.0-or-later"
 
